@@ -35,9 +35,11 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ lang, onStart, onToggleLang }) 
         style={{ zIndex: 0, height: 'calc(94% + 10px)' }}
       />
 
-      {/* Botó de tornar (Visual a la Home) - Posició ajustada top-[42px] left-[42px] */}
-      <button 
-        onClick={playSound}
+     <button 
+        onClick={() => {
+          playSound();
+          window.location.href = 'https://entrenament.netlify.app/';
+        }}
         className="absolute top-[42px] left-[42px] w-14 h-14 bg-black rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform z-10"
       >
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
