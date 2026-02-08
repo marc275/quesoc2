@@ -86,7 +86,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ lang, onBack, onFinish }) => {
 
   const handleBack = () => {
     playClickSound();
-    onBack();
+    window.location.href = 'https://entrenament.netlify.app/'();
   };
 
   const getObjectImage = (obj: string | null) => {
