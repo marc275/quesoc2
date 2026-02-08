@@ -1,0 +1,7 @@
+{
+  "name": "Què Soc? - The Guessing Game",
+  "description": "A vibrant, interactive guessing game where you try to identify objects based on clever clues provided by AI.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
